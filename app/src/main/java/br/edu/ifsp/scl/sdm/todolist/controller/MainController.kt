@@ -25,7 +25,7 @@ class MainController(private  val mainFragment: MainFragment) {
     fun getTasks(){
         CoroutineScope(Dispatchers.IO).launch {
             var tasks = taskDaoImpl.retrieveTasks()
-            mainFragment.updateTaskList(tasks)
+//            mainFragment.updateTaskList(tasks)
         }
     }
 
